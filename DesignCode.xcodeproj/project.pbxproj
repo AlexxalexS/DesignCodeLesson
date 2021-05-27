@@ -37,6 +37,7 @@
 		04BDCBAC265D4CA7000D9B6C /* WorkSans-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BDCB96265D4CA7000D9B6C /* WorkSans-Italic-VariableFont_wght.ttf */; };
 		04BDCBAD265D4CA7000D9B6C /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04BDCB97265D4CA7000D9B6C /* OFL.txt */; };
 		04BDCBAE265D4CA7000D9B6C /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04BDCB98265D4CA7000D9B6C /* README.txt */; };
+		04BDCBB0265FB070000D9B6C /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDCBAF265FB070000D9B6C /* CourseList.swift */; };
 		04DDE2E7265413C9006701F1 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDE2E6265413C9006701F1 /* TabBar.swift */; };
 		04E4BC732629CAA700EE58D1 /* DesignCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4BC722629CAA700EE58D1 /* DesignCodeApp.swift */; };
 		04E4BC752629CAA700EE58D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4BC742629CAA700EE58D1 /* ContentView.swift */; };
@@ -75,6 +76,7 @@
 		04BDCB96265D4CA7000D9B6C /* WorkSans-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		04BDCB97265D4CA7000D9B6C /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		04BDCB98265D4CA7000D9B6C /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		04BDCBAF265FB070000D9B6C /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		04DDE2E6265413C9006701F1 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		04E4BC6F2629CAA700EE58D1 /* DesignCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E4BC722629CAA700EE58D1 /* DesignCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeApp.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				04BDCB7D265D3538000D9B6C /* Modifiers.swift */,
 				0416C38D26527D77006B3F47 /* Home.swift */,
 				0416C38F265288DA006B3F47 /* HomeView.swift */,
+				04BDCBAF265FB070000D9B6C /* CourseList.swift */,
 				04826742262DE3CC00F24D24 /* MenuView.swift */,
 				0416C39126529FB3006B3F47 /* UpdateList.swift */,
 				042D26C92652BD87001B117C /* UpdateDetail.swift */,
@@ -273,6 +276,7 @@
 				04BDCB7E265D3538000D9B6C /* Modifiers.swift in Sources */,
 				04DDE2E7265413C9006701F1 /* TabBar.swift in Sources */,
 				042D26CA2652BD87001B117C /* UpdateDetail.swift in Sources */,
+				04BDCBB0265FB070000D9B6C /* CourseList.swift in Sources */,
 				04E4BC752629CAA700EE58D1 /* ContentView.swift in Sources */,
 				04826743262DE3CC00F24D24 /* MenuView.swift in Sources */,
 				0416C39226529FB3006B3F47 /* UpdateList.swift in Sources */,
@@ -417,6 +421,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Sarantsev.DesignCode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -439,6 +444,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Sarantsev.DesignCode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
