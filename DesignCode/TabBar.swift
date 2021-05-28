@@ -13,14 +13,13 @@ struct TabBar: View {
             Home().tabItem {
                 Image(systemName: "play.circle.fill")
                 Text("Home")
-                
             }
+            
             ContentView().tabItem {
                 Image(systemName: "rectangle.stack.fill")
                 Text("Certificates")
             }
         }
-        .edgesIgnoringSafeArea(.top)
     }
 }
 
