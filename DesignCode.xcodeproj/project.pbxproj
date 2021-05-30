@@ -43,6 +43,10 @@
 		04E4BC752629CAA700EE58D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4BC742629CAA700EE58D1 /* ContentView.swift */; };
 		04E4BC772629CAA800EE58D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E4BC762629CAA800EE58D1 /* Assets.xcassets */; };
 		04E4BC7A2629CAA800EE58D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E4BC792629CAA800EE58D1 /* Preview Assets.xcassets */; };
+		04E6A4732663C59900B56747 /* CourseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6A4722663C59900B56747 /* CourseDetail.swift */; };
+		04E6A4752663CC0F00B56747 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6A4742663CC0F00B56747 /* Data.swift */; };
+		04E6A4772663CF2400B56747 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6A4762663CF2400B56747 /* PostList.swift */; };
+		04E6A4792664002B00B56747 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6A4782664002B00B56747 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +88,10 @@
 		04E4BC762629CAA800EE58D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04E4BC792629CAA800EE58D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04E4BC7B2629CAA800EE58D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E6A4722663C59900B56747 /* CourseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetail.swift; sourceTree = "<group>"; };
+		04E6A4742663CC0F00B56747 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		04E6A4762663CF2400B56747 /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
+		04E6A4782664002B00B56747 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,10 +168,14 @@
 				0416C38D26527D77006B3F47 /* Home.swift */,
 				0416C38F265288DA006B3F47 /* HomeView.swift */,
 				04BDCBAF265FB070000D9B6C /* CourseList.swift */,
+				04E6A4722663C59900B56747 /* CourseDetail.swift */,
 				04826742262DE3CC00F24D24 /* MenuView.swift */,
 				0416C39126529FB3006B3F47 /* UpdateList.swift */,
 				042D26C92652BD87001B117C /* UpdateDetail.swift */,
 				042D26CB2652CCC6001B117C /* UpdateStore.swift */,
+				04E6A4742663CC0F00B56747 /* Data.swift */,
+				04E6A4782664002B00B56747 /* DataStore.swift */,
+				04E6A4762663CF2400B56747 /* PostList.swift */,
 				04DDE2E6265413C9006701F1 /* TabBar.swift */,
 				04E4BC762629CAA800EE58D1 /* Assets.xcassets */,
 				04BDCB81265D4CA7000D9B6C /* Work_Sans */,
@@ -273,15 +285,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				041A2C152657DA45005CD50B /* RingView.swift in Sources */,
+				04E6A4792664002B00B56747 /* DataStore.swift in Sources */,
+				04E6A4772663CF2400B56747 /* PostList.swift in Sources */,
 				04BDCB7E265D3538000D9B6C /* Modifiers.swift in Sources */,
 				04DDE2E7265413C9006701F1 /* TabBar.swift in Sources */,
 				042D26CA2652BD87001B117C /* UpdateDetail.swift in Sources */,
 				04BDCBB0265FB070000D9B6C /* CourseList.swift in Sources */,
 				04E4BC752629CAA700EE58D1 /* ContentView.swift in Sources */,
 				04826743262DE3CC00F24D24 /* MenuView.swift in Sources */,
+				04E6A4752663CC0F00B56747 /* Data.swift in Sources */,
 				0416C39226529FB3006B3F47 /* UpdateList.swift in Sources */,
 				042D26CC2652CCC6001B117C /* UpdateStore.swift in Sources */,
 				0416C38E26527D77006B3F47 /* Home.swift in Sources */,
+				04E6A4732663C59900B56747 /* CourseDetail.swift in Sources */,
 				0416C390265288DA006B3F47 /* HomeView.swift in Sources */,
 				04E4BC732629CAA700EE58D1 /* DesignCodeApp.swift in Sources */,
 			);
