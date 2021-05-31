@@ -63,6 +63,7 @@ struct CourseList: View {
 struct CourseList_Previews: PreviewProvider {
     static var previews: some View {
         CourseList()
+            .preferredColorScheme(.dark)
     }
 }
 
@@ -89,7 +90,7 @@ struct CourseView: View {
             .padding(30)
             .frame(maxWidth: show == true ? .infinity : screen.width - 60, maxHeight: show == true ? .infinity: 280, alignment: .top )
             .offset(y: show ? 460 : 0)
-            .background(Color.white)
+            .background(Color("background2"))
             .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
             .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
             .opacity(show ? 1 : 0)
@@ -165,7 +166,7 @@ struct CourseView: View {
             
             if show {
                 CourseDetail(course: course, show: $show, active: $active, activeIndex: $activeIndex)
-                    .background(Color.white)
+                    .background(Color("background2"))
                     .animation(nil)
             }
            

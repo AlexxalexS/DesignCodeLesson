@@ -130,6 +130,7 @@
  struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
         
     }
  }
@@ -218,14 +219,12 @@
                  .lineSpacing(4)
                  }
                  .padding(20)
-                 .background(Color.white)
+                 .background(Color("background3"))
                  .cornerRadius(20)
                  .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 10)
                  
             }
-            
-            
-            
+
             Spacer()
         }
         .padding(.top, 8)
