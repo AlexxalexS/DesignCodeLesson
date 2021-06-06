@@ -17,6 +17,7 @@
 		042D26CC2652CCC6001B117C /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D26CB2652CCC6001B117C /* UpdateStore.swift */; };
 		0450F682266A3E3F00C787E0 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450F681266A3E3F00C787E0 /* Buttons.swift */; };
 		04826743262DE3CC00F24D24 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04826742262DE3CC00F24D24 /* MenuView.swift */; };
+		049527DF266CEB4700225588 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049527DE266CEB4700225588 /* LoginView.swift */; };
 		04BDCB7E265D3538000D9B6C /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BDCB7D265D3538000D9B6C /* Modifiers.swift */; };
 		04BDCB99265D4CA7000D9B6C /* WorkSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BDCB82265D4CA7000D9B6C /* WorkSans-VariableFont_wght.ttf */; };
 		04BDCB9A265D4CA7000D9B6C /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BDCB84265D4CA7000D9B6C /* WorkSans-Regular.ttf */; };
@@ -64,6 +65,7 @@
 		042D26CB2652CCC6001B117C /* UpdateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
 		0450F681266A3E3F00C787E0 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		04826742262DE3CC00F24D24 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		049527DE266CEB4700225588 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		04BDCB7D265D3538000D9B6C /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		04BDCB82265D4CA7000D9B6C /* WorkSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		04BDCB84265D4CA7000D9B6C /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.ttf"; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				04BDCB7D265D3538000D9B6C /* Modifiers.swift */,
 				0416C38D26527D77006B3F47 /* Home.swift */,
 				0416C38F265288DA006B3F47 /* HomeView.swift */,
+				049527DE266CEB4700225588 /* LoginView.swift */,
 				04BDCBAF265FB070000D9B6C /* CourseList.swift */,
 				04E6A47D2664091C00B56747 /* CourseStore.swift */,
 				04E6A4722663C59900B56747 /* CourseDetail.swift */,
@@ -323,6 +326,7 @@
 				04E6A4732663C59900B56747 /* CourseDetail.swift in Sources */,
 				0450F682266A3E3F00C787E0 /* Buttons.swift in Sources */,
 				0416C390265288DA006B3F47 /* HomeView.swift in Sources */,
+				049527DF266CEB4700225588 /* LoginView.swift in Sources */,
 				04E4BC732629CAA700EE58D1 /* DesignCodeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
