@@ -13,6 +13,7 @@ struct LoginView: View {
     @State var isFocused = false
     @State var showAlert = false
     @State var alertMessage = "Somthing went wrong."
+    @State var isLoading = false
     
     func hideKeyboard() {
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
@@ -91,9 +92,15 @@ struct LoginView: View {
                     Spacer()
                     
                     Button(action: {
-                        self.showAlert = true
+                        
                         self.hideKeyboard()
                         self.isFocused = false
+                        self.isLoading = true
+                        
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            self.isLoading = false
+                            self.showAlert = true
+                        }
                     }, label: {
                         Text("Log in")
                             .foregroundColor(.black)
@@ -116,6 +123,9 @@ struct LoginView: View {
             .onTapGesture {
                 self.isFocused = false
                 self.hideKeyboard()
+            }
+            if isLoading {
+                LoadingView()
             }
         }
     }
