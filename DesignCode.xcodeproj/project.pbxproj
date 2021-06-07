@@ -58,6 +58,7 @@
 		04F73C3A266E42A6003565FC /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 04F73C38266E42A6003565FC /* success.json */; };
 		04F73C3C266E435A003565FC /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F73C3B266E435A003565FC /* LottieView.swift */; };
 		04F73C3E266E45C2003565FC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F73C3D266E45C2003565FC /* LoadingView.swift */; };
+		04F73C40266E481A003565FC /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F73C3F266E481A003565FC /* SuccessView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +112,7 @@
 		04F73C38266E42A6003565FC /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
 		04F73C3B266E435A003565FC /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		04F73C3D266E45C2003565FC /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		04F73C3F266E481A003565FC /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				041C5EE42664DA3D00D81DE5 /* BlurView.swift */,
 				04F73C3B266E435A003565FC /* LottieView.swift */,
 				04F73C3D266E45C2003565FC /* LoadingView.swift */,
+				04F73C3F266E481A003565FC /* SuccessView.swift */,
 				0450F681266A3E3F00C787E0 /* Buttons.swift */,
 				04E4BC762629CAA800EE58D1 /* Assets.xcassets */,
 				04BDCB81265D4CA7000D9B6C /* Work_Sans */,
@@ -350,6 +353,7 @@
 				04E6A4752663CC0F00B56747 /* Data.swift in Sources */,
 				0416C39226529FB3006B3F47 /* UpdateList.swift in Sources */,
 				042D26CC2652CCC6001B117C /* UpdateStore.swift in Sources */,
+				04F73C40266E481A003565FC /* SuccessView.swift in Sources */,
 				0416C38E26527D77006B3F47 /* Home.swift in Sources */,
 				04E6A4732663C59900B56747 /* CourseDetail.swift in Sources */,
 				0450F682266A3E3F00C787E0 /* Buttons.swift in Sources */,
