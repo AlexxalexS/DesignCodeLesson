@@ -93,7 +93,7 @@ struct HomeView_Previews: PreviewProvider {
             
     }
 }
-
+ 
 struct SectionView: View {
     var section: Section
     var width: CGFloat = 275
