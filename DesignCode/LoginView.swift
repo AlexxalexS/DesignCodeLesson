@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LoginView: View {
     @State var email = ""
@@ -15,19 +16,30 @@ struct LoginView: View {
     @State var alertMessage = "Somthing went wrong."
     @State var isLoading = false
     @State var isSuccessful = false
+    @EnvironmentObject var user: UserStore
+  
     
     func login() {
         self.hideKeyboard()
         self.isFocused = false
         self.isLoading = true
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
             self.isLoading = false
-            // self.showAlert = true
-            self.isSuccessful = true
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                self.isSuccessful = false
+            if error != nil {
+                self.alertMessage = error?.localizedDescription ?? ""
+                self.showAlert = true
+            } else {
+                self.isSuccessful = true
+                self.user.isLogged = true
+                UserDefaults.standard.set(true, forKey: "isLogged")
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    self.isSuccessful = false
+                    self.email = ""
+                    self.password = ""
+                    self.user.showLogin = false
+                }
             }
         }
     }
@@ -128,7 +140,7 @@ struct LoginView: View {
                 .padding()
                 
             }
-            .offset(y: isFocused ? -300 : 0)
+            .offset(y: isFocused ? -100 : 0)
             .animation(isFocused ? .easeInOut : nil)
             .onTapGesture {
                 self.isFocused = false
@@ -146,7 +158,7 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView().environmentObject(UserStore())
         //.previewDevice("iPad Air 2")
     }
 }
@@ -186,16 +198,16 @@ struct CoverView: View {
                     .offset(x: -150, y: -200)
                     .rotationEffect(Angle(degrees: show ? 360 + 90 : 90))
                     .blendMode(.plusDarker)
-                    //                    .animation(Animation.linear(duration: 120).repeatForever(autoreverses: false))
-                    .animation(nil)
+                    .animation(Animation.linear(duration: 120).repeatForever(autoreverses: false))
+//                    .animation(nil)
                     .onAppear { self.show = true }
                 
                 Image(uiImage: #imageLiteral(resourceName: "Blob"))
                     .offset(x: -200, y: -250)
                     .rotationEffect(Angle(degrees: show ? 360 : 0 ), anchor: .leading)
                     .blendMode(.overlay)
-                    //                     .animation(Animation.linear(duration: 100).repeatForever(autoreverses: false))
-                    .animation(nil)
+                    .animation(Animation.linear(duration: 100).repeatForever(autoreverses: false))
+//                    .animation(nil)
             }
         )
         .background(
