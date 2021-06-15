@@ -10,7 +10,8 @@ import SwiftUI
 struct TabBar: View {
     var body: some View {
         TabView {
-            Home().tabItem {
+            Home().environmentObject(UserStore())
+                .tabItem {
                 Image(systemName: "play.circle.fill")
                 Text("Home")
             }

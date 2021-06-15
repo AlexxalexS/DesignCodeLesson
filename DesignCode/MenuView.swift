@@ -37,7 +37,7 @@ struct MenuView: View {
                         self.showProfile = false
                     }
             }
-            .frame(maxWidth: .infinity)
+            .frame(maxWidth: 500)
             .frame(height: 300)
 //            .background(LinearGradient(gradient: Gradient(colors: [Color("background3"), Color("background3").opacity(0.6)]), startPoint: .top, endPoint: .bottom))
             .background(BlurView(style: .systemMaterial))
